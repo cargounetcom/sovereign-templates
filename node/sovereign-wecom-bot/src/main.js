@@ -9,7 +9,7 @@ import crypto from 'node:crypto';
 // Crypto matches the WeCom callback spec (SHA1 signature + AES-256-CBC with a
 // 43-char EncodingAESKey), ported from the AionUi ext-wecom-bot example.
 
-function sha1Sign(token, timestamp, nonce, encrypted) {
+export function sha1Sign(token, timestamp, nonce, encrypted) {
   const sorted = [token, String(timestamp), String(nonce), encrypted].sort();
   return crypto.createHash('sha1').update(sorted.join('')).digest('hex');
 }
@@ -27,7 +27,7 @@ function encodePkcs7(buffer) {
   return Buffer.concat([buffer, pad]);
 }
 
-function decryptPayload(encodingAesKey, encrypted) {
+export function decryptPayload(encodingAesKey, encrypted) {
   const aesKey = Buffer.from(`${encodingAesKey}=`, 'base64');
   const iv = aesKey.subarray(0, 16);
   const decipher = crypto.createDecipheriv('aes-256-cbc', aesKey, iv);
@@ -42,7 +42,7 @@ function decryptPayload(encodingAesKey, encrypted) {
   return body.subarray(4, 4 + len).toString('utf8');
 }
 
-function encryptPayload(encodingAesKey, plainText) {
+export function encryptPayload(encodingAesKey, plainText) {
   const aesKey = Buffer.from(`${encodingAesKey}=`, 'base64');
   const iv = aesKey.subarray(0, 16);
   const random16 = crypto.randomBytes(16);

@@ -11,11 +11,11 @@ import crypto from 'node:crypto';
 
 const FEISHU_BASE = process.env.FEISHU_BASE_URL ?? 'https://open.feishu.cn';
 
-function aesKey(encryptKey) {
+export function aesKey(encryptKey) {
   return crypto.createHash('sha256').update(encryptKey).digest();
 }
 
-function decrypt(encryptKey, encrypted) {
+export function decrypt(encryptKey, encrypted) {
   const key = aesKey(encryptKey);
   const iv = key.subarray(0, 16);
   const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
@@ -23,7 +23,7 @@ function decrypt(encryptKey, encrypted) {
   return JSON.parse(buf.toString('utf8'));
 }
 
-function encrypt(encryptKey, plain) {
+export function encrypt(encryptKey, plain) {
   const key = aesKey(encryptKey);
   const iv = key.subarray(0, 16);
   const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);
