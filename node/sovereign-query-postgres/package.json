@@ -1,0 +1,10 @@
+{
+  "name": "sovereign-query-postgres",
+  "version": "1.0.0",
+  "description": "Run read-only SQL against a self-hosted PostgreSQL instance.",
+  "main": "src/main.js",
+  "type": "module",
+  "dependencies": {
+    "pg": "^8.11.0"
+  }
+}

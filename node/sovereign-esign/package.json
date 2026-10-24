@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-esign",
+  "version": "1.0.0",
+  "description": "DocuSeal e-signature: create a submission and store the signed document on completion.",
+  "main": "src/main.js",
+  "type": "module"
+}

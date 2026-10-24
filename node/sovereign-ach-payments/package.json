@@ -1,0 +1,10 @@
+{
+  "name": "sovereign-ach-payments",
+  "version": "1.0.0",
+  "description": "Stripe ACH (bank debit) payments with signature-verified webhook.",
+  "main": "src/main.js",
+  "type": "module",
+  "dependencies": {
+    "stripe": "^16.0.0"
+  }
+}

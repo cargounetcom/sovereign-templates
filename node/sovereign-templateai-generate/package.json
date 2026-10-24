@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-templateai-generate",
+  "version": "1.0.0",
+  "description": "Proxy to the templateai generator (OpenDesign fork): generate a site scaffold.",
+  "main": "src/main.js",
+  "type": "module"
+}

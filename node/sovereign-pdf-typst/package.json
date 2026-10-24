@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-pdf-typst",
+  "version": "1.0.0",
+  "description": "Render Typst markup to a PDF and return it.",
+  "main": "src/main.js",
+  "type": "module"
+}
