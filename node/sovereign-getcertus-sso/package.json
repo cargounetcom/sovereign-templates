@@ -1,0 +1,10 @@
+{
+  "name": "sovereign-getcertus-sso",
+  "version": "1.0.0",
+  "description": "Verify GetCertus OIDC tokens and sync users/roles into Appwrite.",
+  "main": "src/main.js",
+  "type": "module",
+  "dependencies": {
+    "jose": "^5.2.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-analytics",
+  "version": "1.0.0",
+  "description": "Forward product events to a self-hosted PostHog instance.",
+  "main": "src/main.js",
+  "type": "module"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-secrets-rotate",
+  "version": "1.0.0",
+  "description": "Sync secrets from a self-hosted Infisical project into Appwrite function variables.",
+  "main": "src/main.js",
+  "type": "module"
+}

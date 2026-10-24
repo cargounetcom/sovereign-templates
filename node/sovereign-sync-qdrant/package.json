@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-sync-qdrant",
+  "version": "1.0.0",
+  "description": "Sync Appwrite documents into a self-hosted Qdrant collection with local embeddings.",
+  "main": "src/main.js",
+  "type": "module"
+}
