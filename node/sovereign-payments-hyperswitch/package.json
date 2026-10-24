@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-payments-hyperswitch",
+  "version": "1.0.0",
+  "description": "Unified payments through a self-hosted Hyperswitch orchestrator with configurable commission.",
+  "main": "src/main.js",
+  "type": "module"
+}
