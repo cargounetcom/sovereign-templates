@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-wecom-bot",
+  "version": "1.0.0",
+  "description": "WeCom (WeChat Work) AI bot webhook: signature verification, AES decrypt/encrypt, echo reply.",
+  "main": "src/main.js",
+  "type": "module"
+}

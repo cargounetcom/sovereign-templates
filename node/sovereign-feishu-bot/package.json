@@ -1,0 +1,7 @@
+{
+  "name": "sovereign-feishu-bot",
+  "version": "1.0.0",
+  "description": "Feishu (Lark) event-subscription bot: URL verification, event decrypt, and message reply.",
+  "main": "src/main.js",
+  "type": "module"
+}
